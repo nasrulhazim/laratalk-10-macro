@@ -27,4 +27,9 @@ Artisan::command('inspire', function () {
     collect([1, 2, 3])->ifEmpty(function (Collection $collection) {
         echo 'hi, you are not empty now.' . PHP_EOL;
     });
+
+    // URL
+    $this->info('Macro on route');
+    $this->comment('Landing Page URL: ' . url()->landingPage());
+    $this->comment('About Us Page URL: ' . url()->aboutUs());
 })->describe('Display an inspiring quote');

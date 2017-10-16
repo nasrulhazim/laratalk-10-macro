@@ -178,7 +178,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         App\Providers\ResponseMacroServiceProvider::class,
-        App\Providers\CollectionMacroServiceProviderp::class,
+        App\Providers\CollectionMacroServiceProvider::class,
+        App\Providers\RouteMacroServiceProvider::class,
     ],
 
     /*
