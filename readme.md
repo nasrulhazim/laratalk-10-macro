@@ -1,5 +1,9 @@
 # Laravel Macros
 
+*Allow you to add on custom functionality to internal Laravel components - [Caleb Porzio](https://tighten.co/blog/the-magic-of-laravel-macros)*
+
+More reading about [Laravel Macroable Trait](http://alanstorm.com/laravels_macroabletrait/)
+
 Search for `use Illuminate\Support\Traits\Macroable;`
 
 1. Rule
