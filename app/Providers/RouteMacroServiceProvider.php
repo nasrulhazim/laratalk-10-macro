@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\ServiceProvider;
+use Route;
 
 class RouteMacroServiceProvider extends ServiceProvider
 {
@@ -20,6 +21,14 @@ class RouteMacroServiceProvider extends ServiceProvider
 
         UrlGenerator::macro('aboutUs', function () {
             return route('aboutUs');
+        });
+
+        Route::macro('landingPage', function () {
+            return url()->landingPage();
+        });
+
+        Route::macro('aboutUs', function () {
+            return url()->aboutUs();
         });
     }
 

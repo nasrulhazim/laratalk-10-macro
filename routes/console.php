@@ -22,14 +22,19 @@ Artisan::command('inspire', function () {
     // Collection
     $this->info('Macro on collection');
     collect()->ifEmpty(function (Collection $collection) {
-        echo 'hi, you are empty now.' . PHP_EOL;
+        $this->comment('hi, you are empty now.');
     });
     collect([1, 2, 3])->ifEmpty(function (Collection $collection) {
-        echo 'hi, you are not empty now.' . PHP_EOL;
+        $this->comment('hi, you are not empty now.');
     });
 
     // URL
     $this->info('Macro on route');
     $this->comment('Landing Page URL: ' . url()->landingPage());
     $this->comment('About Us Page URL: ' . url()->aboutUs());
+
+    // Route
+    $this->info('Macro on Route');
+    $this->comment(Route::landingPage());
+    $this->comment(Route::aboutUs());
 })->describe('Display an inspiring quote');
